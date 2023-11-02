@@ -6,4 +6,9 @@ public interface UserService {
 
     User create(User userToCreate);
 
+    void delete(Long id);
+
+    Iterable<User> findAllUsers();
+
+
 }

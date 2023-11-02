@@ -29,4 +29,15 @@ public class UserServiceImpl implements UserService {
         }
         return userRepository.save(userToCreate);
     }
+
+    @Override
+    public Iterable<User> findAllUsers() {
+        return userRepository.findAll();
+    }
+
+    @Override
+    public void delete(Long id){
+        userRepository.deleteAll();
+    }
+
 }
